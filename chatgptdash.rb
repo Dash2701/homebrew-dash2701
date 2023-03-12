@@ -5,11 +5,11 @@
 class Chatgptdash < Formula
   desc ""
   homepage "https://github.com/dash2701/chatgptdash"
-  version "0.5"
+  version "0.6"
 
   on_macos do
-    url "https://github.com/Dash2701/chatgptdash/releases/download/v0.5/chatgptdash_0.5_darwin_all.tar.gz"
-    sha256 "1ea90910cfcc9d5cc438966d160f7eaf6d8087d53f12602ad5b0030150a9d865"
+    url "https://github.com/Dash2701/chatgptdash/releases/download/v0.6/chatgptdash_0.6_darwin_all.tar.gz"
+    sha256 "07ae555be97bc273dd2fbb243d2aa2a69e353a126d07ebe1aabdbec5d5f19973"
 
     def install
       bin.install "chatgptdash"
@@ -18,16 +18,16 @@ class Chatgptdash < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/Dash2701/chatgptdash/releases/download/v0.5/chatgptdash_0.5_linux_arm64.tar.gz"
-      sha256 "80e0f86ccd34d476fd201abd338ecf924a2492678c636a37bc123450fb88da6f"
+      url "https://github.com/Dash2701/chatgptdash/releases/download/v0.6/chatgptdash_0.6_linux_arm64.tar.gz"
+      sha256 "1454a4df2e4028ab8354356ae07873e8b27ec111e50c562062bb63b22797ed46"
 
       def install
         bin.install "chatgptdash"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/Dash2701/chatgptdash/releases/download/v0.5/chatgptdash_0.5_linux_amd64.tar.gz"
-      sha256 "0b98a4903bbc4053b294cdabf2700227dfd1193ce9645731e83ac6a7b230f806"
+      url "https://github.com/Dash2701/chatgptdash/releases/download/v0.6/chatgptdash_0.6_linux_amd64.tar.gz"
+      sha256 "46c54ca540d84997026057645be8aae7a7161718f1fa4143f81a7cdda6be8e8a"
 
       def install
         bin.install "chatgptdash"
